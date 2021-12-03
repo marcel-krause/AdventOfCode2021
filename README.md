@@ -15,8 +15,8 @@ GNU General Public License (GNU GPL-3.0-or-later). This work is released under G
 The repo contains the solutions to the following problems of the [Advent of Code 2021](https://adventofcode.com/2021) advent calendar:
 1. [Sonar Sweep](https://adventofcode.com/2021/day/1): [Part 1](Day01-01.py) | [Part 2](Day01-02.py)
 2. [Dive!](https://adventofcode.com/2021/day/2): [Part 1](Day02-01.py) | [Part 2](Day02-02.py)
+3. [Binary Diagnostic](https://adventofcode.com/2021/day/3): [Part 1](Day03-01.py) | [Part 2](Day03-02.py)
 <!--
-3. [](https://adventofcode.com/2021/day/3): [Part 1](Day03-01.py) | [Part 2](Day03-02.py)
 4. [](https://adventofcode.com/2021/day/4): [Part 1](Day04-01.py) | [Part 2](Day04-02.py)
 5. [](https://adventofcode.com/2021/day/5): [Part 1](Day05-01.py) | [Part 2](Day05-02.py)
 6. [](https://adventofcode.com/2021/day/6): [Part 1](Day06-01.py) | [Part 2](Day06-02.py)
