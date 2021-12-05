@@ -24,30 +24,25 @@
  ###############################################################################################################
 
 
-#----------------------------#
-#        Main Program        #
-#----------------------------#
-
-if __name__ == "__main__":
-    # Print the welcome screen
-    print('''
+# Print the welcome screen
+print('''
 +------------------------------------+
 |                                    |
 |           Advent of Code           |
 |         Day 01 - Riddle 01         |
 |                                    |
 +------------------------------------+
-    ''')
+''')
 
-    # Read the input file
-    with open('Day01-01_input.dat', 'r') as content_file:
-        all_lines = [int(line.rstrip('\n')) for line in content_file]
+# Read the input file
+with open('Day01-01_input.dat', 'r') as content_file:
+    all_lines = [int(line.rstrip('\n')) for line in content_file]
 
-    # Count the number of increases
-    num_increases = 0
-    for i in range(1, len(all_lines)):
-        if all_lines[i] > all_lines[i-1]:
-            num_increases += 1
+# Count the number of increases
+num_increases = 0
+for i in range(1, len(all_lines)):
+    if all_lines[i] > all_lines[i-1]:
+        num_increases += 1
 
-    # Print the result
-    print("{} measurements are larger than the previous one.".format(num_increases))
+# Print the result
+print("{} measurements are larger than the previous one.".format(num_increases))

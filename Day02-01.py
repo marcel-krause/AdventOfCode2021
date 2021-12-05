@@ -24,37 +24,32 @@
  ###############################################################################################################
 
 
-#----------------------------#
-#        Main Program        #
-#----------------------------#
-
-if __name__ == "__main__":
-    # Print the welcome screen
-    print('''
+# Print the welcome screen
+print('''
 +------------------------------------+
 |                                    |
 |           Advent of Code           |
 |         Day 02 - Riddle 01         |
 |                                    |
 +------------------------------------+
-    ''')
+''')
 
-    # Read the input file
-    with open('Day02-01_input.dat', 'r') as content_file:
-        all_lines = [line.rstrip('\n') for line in content_file]
+# Read the input file
+with open('Day02-01_input.dat', 'r') as content_file:
+    all_lines = [line.rstrip('\n') for line in content_file]
 
-    # Find the final positions of the submarine
-    horizontal_position = 0
-    depth = 0
-    for line in all_lines:
-        curr_pos_change = int(line.split()[1])
-        
-        if 'forward' in line:
-            horizontal_position += curr_pos_change
-        if 'down' in line:
-            depth += curr_pos_change
-        if 'up' in line:
-            depth -= curr_pos_change
+# Find the final positions of the submarine
+horizontal_position = 0
+depth = 0
+for line in all_lines:
+    curr_pos_change = int(line.split()[1])
+    
+    if 'forward' in line:
+        horizontal_position += curr_pos_change
+    if 'down' in line:
+        depth += curr_pos_change
+    if 'up' in line:
+        depth -= curr_pos_change
 
-    # Print the result
-    print("The product of the final horizontal position and depth is given by {}.".format(horizontal_position*depth))
+# Print the result
+print("The product of the final horizontal position and depth is given by {}.".format(horizontal_position*depth))

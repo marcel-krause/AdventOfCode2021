@@ -23,10 +23,7 @@
 #                                                                                                               #
  ###############################################################################################################
 
-
-#-------------------------#
-#         Functions       #
-#-------------------------#
+# Filter the bits with the given criterium
 def bit_criteria_filter(bit_list: list, filter_criterium: int) -> int:
     filter_list = bit_list
     j = 0
@@ -45,32 +42,26 @@ def bit_criteria_filter(bit_list: list, filter_criterium: int) -> int:
 
         j += 1
 
-
-#----------------------------#
-#        Main Program        #
-#----------------------------#
-
-if __name__ == "__main__":
-    # Print the welcome screen
-    print('''
+# Print the welcome screen
+print('''
 +------------------------------------+
 |                                    |
 |           Advent of Code           |
 |         Day 03 - Riddle 02         |
 |                                    |
 +------------------------------------+
-    ''')
+''')
 
-    # Read the input file
-    with open('Day03-01_input.dat', 'r') as content_file:
-        all_lines = [line.rstrip('\n') for line in content_file]
+# Read the input file
+with open('Day03-01_input.dat', 'r') as content_file:
+    all_lines = [line.rstrip('\n') for line in content_file]
 
-    # Calculate the oxygen and CO2 ratings
-    oxygen_rating = bit_criteria_filter(all_lines, 0)
-    co2_rating = bit_criteria_filter(all_lines, 1)
+# Calculate the oxygen and CO2 ratings
+oxygen_rating = bit_criteria_filter(all_lines, 0)
+co2_rating = bit_criteria_filter(all_lines, 1)
 
-    # Calculate the life support rating
-    life_support_rating = oxygen_rating * co2_rating
+# Calculate the life support rating
+life_support_rating = oxygen_rating * co2_rating
 
-    # Print the result
-    print("The life support rating of the submarine is given by {}.".format(life_support_rating))
+# Print the result
+print("The life support rating of the submarine is given by {}.".format(life_support_rating))

@@ -24,39 +24,34 @@
  ###############################################################################################################
 
 
-#----------------------------#
-#        Main Program        #
-#----------------------------#
-
-if __name__ == "__main__":
-    # Print the welcome screen
-    print('''
+# Print the welcome screen
+print('''
 +------------------------------------+
 |                                    |
 |           Advent of Code           |
 |         Day 03 - Riddle 01         |
 |                                    |
 +------------------------------------+
-    ''')
+''')
 
-    # Read the input file
-    with open('Day03-01_input.dat', 'r') as content_file:
-        all_lines = [line.rstrip('\n') for line in content_file]
+# Read the input file
+with open('Day03-01_input.dat', 'r') as content_file:
+    all_lines = [line.rstrip('\n') for line in content_file]
 
-    # Get the most and least common bits for each position
-    counter = [0 for _ in range(len(all_lines[0]))]
-    for curr in all_lines:
-        for i in range(len(curr)):
-            counter[i] += int(curr[i])
-    most_common_bits = ''.join(list(map(lambda x: '0' if x < len(all_lines)/2 else '1', counter)))
-    least_common_bits = ''.join(list(map(lambda x: '1' if x < len(all_lines)/2 else '0', counter)))
+# Get the most and least common bits for each position
+counter = [0 for _ in range(len(all_lines[0]))]
+for curr in all_lines:
+    for i in range(len(curr)):
+        counter[i] += int(curr[i])
+most_common_bits = ''.join(list(map(lambda x: '0' if x < len(all_lines)/2 else '1', counter)))
+least_common_bits = ''.join(list(map(lambda x: '1' if x < len(all_lines)/2 else '0', counter)))
 
-    # Calculate the oxygen and CO2 ratings
-    gamma_rate = int(most_common_bits, 2)
-    epsilon_rate = int(least_common_bits, 2)
+# Calculate the oxygen and CO2 ratings
+gamma_rate = int(most_common_bits, 2)
+epsilon_rate = int(least_common_bits, 2)
 
-    # Calculate the power consumption
-    power_consumption = gamma_rate * epsilon_rate
+# Calculate the power consumption
+power_consumption = gamma_rate * epsilon_rate
 
-    # Print the result
-    print("The power consumption of the submarine is given by {}.".format(power_consumption))
+# Print the result
+print("The power consumption of the submarine is given by {}.".format(power_consumption))
