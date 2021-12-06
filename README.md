@@ -9,8 +9,8 @@ The repo contains the solutions to the following problems of the [Advent of Code
 3. [Binary Diagnostic](https://adventofcode.com/2021/day/3) ([Part 1](Day03-01.py) | [Part 2](Day03-02.py))
 4. [Giant Squid](https://adventofcode.com/2021/day/4) ([Part 1](Day04-01.py) | [Part 2](Day04-02.py))
 5. [Hydrothermal Venture](https://adventofcode.com/2021/day/5) ([Part 1](Day05-01.py) | [Part 2](Day05-02.py))
+6. [Lanternfish](https://adventofcode.com/2021/day/6) ([Part 1](Day06-01.py) | [Part 2](Day06-02.py))
 <!--
-6. [](https://adventofcode.com/2021/day/6) ([Part 1](Day06-01.py) | [Part 2](Day06-02.py))
 7. [](https://adventofcode.com/2021/day/7) ([Part 1](Day07-01.py) | [Part 2](Day07-02.py))
 8. [](https://adventofcode.com/2021/day/8) ([Part 1](Day08-01.py) | [Part 2](Day08-02.py))
 9. [](https://adventofcode.com/2021/day/9) ([Part 1](Day09-01.py) | [Part 2](Day09-02.py))
